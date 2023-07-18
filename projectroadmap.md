@@ -1,1 +1,1 @@
--[ ] Create a README file in the repository
+- [ ] Create a README file in the repository
