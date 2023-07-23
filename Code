@@ -1,1 +1,3 @@
+def get_user_input():
+    adjectives = ['happy', 'sad', 'excited', 'angry', 'calm', 'anxious']
 
