@@ -5,4 +5,4 @@
 - [X] Find related repositories
 - [X] Evaluate related repositories
 - [ ] Clone related existing repositories to your team
-- [ ] Document any issues and how to make it work
+- [X] Document any issues and how to make it work
