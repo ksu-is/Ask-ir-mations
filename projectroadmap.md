@@ -1,4 +1,3 @@
-
 - [X] Learn markdown language and create a README file in the repository
 - [X] Create a project roadmap file
 - [X] Setup roadmap as a task list with check boxes
