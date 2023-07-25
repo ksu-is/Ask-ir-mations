@@ -23,6 +23,9 @@ root.title("Ask-ir-mations")
 feeling_var = tk.StringVar(root)
 feeling_var.set("happy")  # First automatic selection
 
+feeling_label = tk.Label(root, text="Affirmation of the day: 'Open your heart and drink in the glorious day' -Heather Havrilesky ")
+feeling_label.pack() # Affirmation of the day
+
 feeling_label = tk.Label(root, text="How do you feel?")
 feeling_label.pack()
 
