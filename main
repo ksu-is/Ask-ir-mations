@@ -1,3 +1,36 @@
-def get_user_input():
-    adjectives = ['happy', 'fear', 'guilt', 'shame', 'boredom', 'sad', 'excited', 'angry', 'calm', 'anxious']
-print("Select an adjective that describes how you feel in this current moment: ")
+# main.py
+
+import tkinter as tk
+from tkinter import messagebox
+
+def get_response(feeling):
+    responses = {
+        'happy': "Happiness starts from within, you deserve to be happy.",
+        'sad': "You will make it through this sadness, don’t forget that the sun comes out after every storm.",
+        'worried': "Take a deep breath and do not worry about things you cannot control.",
+        'confused': "Don’t stress too much about things you can’t change, your mind is clear and at ease.",
+        'lonely': "Loneliness will pass, but just because you're alone doesn’t mean your lonely. Use the private time to be present with yourself.",}
+    return responses.get(feeling, "We currently don't have a response to that request.")
+
+def submit_feeling():
+    selected_feeling = feeling_var.get()
+    response = get_response(selected_feeling)
+    messagebox.showinfo("Response", response)
+
+root = tk.Tk()
+root.title("Ask-ir-mations")
+
+feeling_var = tk.StringVar(root)
+feeling_var.set("happy")  # First automatic selection
+
+feeling_label = tk.Label(root, text="How do you feel?")
+feeling_label.pack()
+
+feeling_options = ['happy', 'sad', 'worried', 'confused', 'lonely']
+feeling_dropdown = tk.OptionMenu(root, feeling_var, *feeling_options)
+feeling_dropdown.pack()
+
+submit_button = tk.Button(root, text="Submit", command=submit_feeling)
+submit_button.pack()
+
+root.mainloop()
