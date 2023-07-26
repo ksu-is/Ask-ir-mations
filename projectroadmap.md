@@ -6,5 +6,5 @@
 - [X] Document any issues and how to make it work
 - [X] Finish Coding in main.py
 - [X] Create PowerPoint
-- [ ] Finish Powerpoint
+- [X] Finish Powerpoint
 - [X] Schedule Presentation
