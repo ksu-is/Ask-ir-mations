@@ -3,5 +3,8 @@
 - [X] Setup roadmap as a task list with check boxes
 - [X] Find related repositories
 - [X] Evaluate related repositories
-- [ ] Clone related existing repositories to your team
 - [X] Document any issues and how to make it work
+- [X] Finish Coding in main.py
+- [X] Create PowerPoint
+- [ ] Finish Powerpoint
+- [X] Schedule Presentation
